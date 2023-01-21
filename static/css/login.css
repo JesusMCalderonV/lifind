@@ -1,0 +1,274 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-SemiBold.ttf'), url('Poppins/Poppins-Bold.ttf'), url('Poppins/Poppins-Black.ttf'), url('Poppins/Poppins-Light.ttf'), url('Poppins/Poppins-Regular.ttf'), url('Poppins/Poppins-ExtraBold.ttf'), url('Poppins/Poppins-ExtraLight.ttf'), url('Poppins/Poppins-Medium.ttf'), url('Poppins/Poppins-Thin.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(221deg, rgba(168,44,162,1) 32%, rgba(14,98,176,1) 82%);
+    height: 100vh;
+}
+
+.login_div form{
+    background: #fff;
+    height: 300px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    column-gap: 1%;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px;
+    animation-delay: 0;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.login_div .form_sign{
+    background: #fff;
+    height: max-content;
+    min-height: 300px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    column-gap: 1%;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px;
+    animation-delay: 0;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.login_div .form{
+    background: linear-gradient(127deg, rgba(255,255,255,1) 38%, rgba(182,211,238,1) 100%);
+    height: 350px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px;
+}
+
+.permis{
+    padding: 10px 0;
+}
+
+.permis select{
+    background: #e6e6e6;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 2px;
+}
+
+.login_div .form_sign{
+    background: linear-gradient(127deg, rgba(255,255,255,1) 38%, rgba(182,211,238,1) 100%);
+    height: max-content;
+    width: 600px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px;
+}
+
+
+#password, #username, #password2, #name{
+    background: none;
+    border: none;
+    border-radius: 30px;
+    background: #e6e6e6;
+    height: 30px;
+    width: 250px;
+    margin-block-end: 20px;
+    text-align: center;
+    z-index: 100;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+.login{
+    background: linear-gradient(221deg, rgba(168,44,162,1) 32%, rgba(14,98,176,1) 82%);
+    height: 40px;
+    width: max-content;
+    padding: 0 30px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    transition: all ease .3s;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title{
+    top: -40px;
+    position: relative;
+}
+
+.login:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.remember{
+    margin-block-end: 10px;
+}
+
+.remember input:hover, .remember label{
+    cursor: pointer;
+}
+
+.eyes{
+    height: 20px;
+    fill: #5a5a5a;
+}
+
+#see{
+    display: none;
+}
+
+.label_eyes{
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -45px;
+    z-index: 2;
+}
+
+#label_eyes{
+    display: none;
+    transition: all ease .3s;
+    width: 20px;
+    height: 20px;
+}
+
+#label_eyes:hover{
+    cursor: pointer;
+}
+
+#not{
+    display: block;
+}
+
+#yes{
+    display: none;
+}
+
+.signup_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(127deg, rgba(255,255,255,1) 38%, rgba(182,211,238,1) 100%);
+    border-radius: 0 20px 20px 0;
+}
+
+.signup{
+    background: linear-gradient(127deg, rgba(20,233,140,1) 38%, rgba(75,226,173,1) 50%, rgba(182,211,238,1) 97%);
+    height: 40px;
+    width: max-content;
+    padding: 0 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+    transition: all ease .3s;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+p{
+    font-size: 14px;
+    margin-block-end: 10px;
+}
+
+p a{
+    color: #08f;
+}
+
+.signup_form svg{
+    height: 200px;
+    width: 200px;
+    transform: translateY(30px) translateX(40px);
+    z-index: 0;
+    transition: all ease 1s;
+}
+
+.signup_form svg:hover{
+    transform: scale(1.1) translateY(0px) translateX(0px);
+}
+
+
+.signup:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.div_user2, .div_password2{
+    margin-top: 20px;
+}
+
+@keyframes aparecer {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+#mensaje{
+    background: #e0e0e0e5;
+    border-radius: 15px;
+    height: 100px;
+    width: 260px;
+    margin-left: 1100px;
+    box-shadow: 0px 2px 15px #fff;
+}
+
+#mensaje p{
+    font-size: 14px;
+    padding: 43px 10px;
+}
+
+#cerrar{
+    display: none;
+}
+
+#mensaje label{
+    background: rgb(192, 192, 192);
+    padding: 1px 6px;
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(238px) translateY(-100px);
+    transition: all ease .5s;
+}
+
+#mensaje label:hover{
+    background: #e0e0e0e5;
+    cursor: pointer;
+}
+
+li svg{
+    height: 10px;
+}

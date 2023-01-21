@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Agregar Valoración</title>
+</head>
+<body>
+	<form action="/add_work" method="post">
+		<input type="text" name="work" placeholder="Eje: Quiz">
+		<select name="asignature">
+			{% for i in asignatures%}
+				<option>{{i.name}}</option>
+			{% endfor %}
+		</select>
+		<input type="number" name="score" placeholder="Eje: 15">
+		<input type="number" name="score_max" placeholder="Eje: 20">
+		<input type="submit" value="Agregar">
+	</form>
+</body>
+</html>
