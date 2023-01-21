@@ -1,0 +1,138 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-SemiBold.ttf'), url('Poppins/Poppins-Bold.ttf'), url('Poppins/Poppins-Black.ttf'), url('Poppins/Poppins-Light.ttf'), url('Poppins/Poppins-Regular.ttf'), url('Poppins/Poppins-ExtraBold.ttf'), url('Poppins/Poppins-ExtraLight.ttf'), url('Poppins/Poppins-Medium.ttf'), url('Poppins/Poppins-Thin.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns:270px calc(100vw - 270px);
+}
+
+.barra_lateral{
+    background: #f2f2f2;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.barra_lateral .logo_container svg{
+    height: 150px;
+}
+
+.barra_lateral hr{
+    color: #fff;
+    height: 0.1px;
+}
+
+.barra_lateral .logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.barra_lateral .access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra_lateral .access a{
+    margin-top: 10px;
+    list-style: none;
+    height: 30px;
+    width: 90%;
+    text-align: start;
+    color: #000;
+    border-radius: 3px;
+    font-family: 'Poppins';
+    font-weight: 100;
+    padding: 0 10px;
+    transition: all ease .3s;
+    text-decoration: none;
+    
+}
+
+.barra_lateral .access a li{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.barra_lateral .access a:hover{
+    background: #08f;
+}
+
+.barra_lateral > .access > a:hover li{
+    color: #fff;
+}
+
+a li svg path{
+    transition: all ease .3s;
+}
+
+a:hover li svg path{
+    fill: #fff;
+}
+
+a li svg g{
+    stroke: #000;
+}
+
+a:hover li svg circle{
+    stroke: #fff;
+}
+
+a:hover li svg g{
+    stroke: #fff;
+}
+
+
+
+#home_li svg{
+    height: 25px;
+    width: 25px;
+}
+
+#asignatures_li svg{
+    height: 25px;
+    width: 25px;
+}
+
+#mails_li svg{
+    height: 25px;
+    width: 25px;
+}
+
+#compartir_li svg{
+    height: 25px;
+    width: 25px;
+}
+
+#metas_li svg{
+    height: 25px;
+    width: 25px;
+}
+
+.cuerpo{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 100%;
+}
+
+.graficas{
+    cursor: pointer;
+}
+
+#migrafica{
+    width: 400px;
+    height: 250px;
+}
